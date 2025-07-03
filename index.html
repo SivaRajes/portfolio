@@ -1,115 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Venkata Siva Rajesh Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkata Siva Rajesh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Roboto', sans-serif; background: #fefefe; color: #333; line-height: 1.6; }
+    header {
+      background: linear-gradient(to right, #2c3e50, #34495e);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; }
+    header p, header a { color: #f1c40f; text-decoration: none; margin: 0 0.5rem; }
+    nav {
+      background: #1f2a36;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { color: #f39c12; }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 { color: #2c3e50; margin-bottom: 1rem; }
+    .project {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .project img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Venkata Siva Rajesh Vithanala</h1>
-      <p>Data Science Graduate | ML & Big Data Enthusiast</p>
-      <div class="links">
-        <a href="https://linkedin.com/in/venkata-siva-rajesh-vithanala">LinkedIn</a>
-        <a href="https://github.com/SivaRajes">GitHub</a>
-        <a href="mailto:vvsrmail@umd.edu">Email</a>
+  <header>
+    <h1 data-aos="fade-down">Venkata Siva Rajesh Vithanala</h1>
+    <p data-aos="fade-up">Data Science Graduate | AI & Big Data Enthusiast</p>
+    <p data-aos="fade-up">📧 <a href="mailto:vvsrmail@umd.edu">vvsrmail@umd.edu</a> | 📞 +1 (240)-424-1042</p>
+    <p>
+      <a href="https://linkedin.com/in/venkata-siva-rajesh-vithanala" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/SivaRajes" target="_blank">GitHub</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m a graduate student at the University of Maryland pursuing Data Science. My strengths lie in real-time data pipelines, scalable machine learning, and LLM applications. Previously an Associate Software Engineer at PalTech and currently TA at Break Through Tech AI (Cornell Tech).</p>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>University of Maryland, College Park</strong> — M.S. in Data Science (2024–2026, GPA: 3.95)</li>
+      <li><strong>Vasavi College of Engineering, Hyderabad</strong> — B.E. in Computer Science (2019–2023, GPA: 8.52)</li>
+    </ul>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Graduate TA – Break Through Tech AI</strong> (2025–Present): Mentoring students on ML & big data projects.</li>
+      <li><strong>Associate Software Engineer – PalTech Pvt Ltd</strong> (2023–2024): Built NLP, ML, and SQL-backed forecasting systems.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="project" data-aos="zoom-in">
+      <img src="assets/sp500.png" alt="S&P 500" />
+      <div>
+        <h3><a href="https://github.com/SivaRajes/Analysis-Of-S-P-500-Companies" target="_blank">Analysis of S&P 500 Companies</a></h3>
+        <p>Exploratory analysis and visualizations on financial data using Python.</p>
       </div>
-    </header>
+    </div>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a Data Science graduate student at the University of Maryland, passionate about scalable AI solutions. I work with Python, Spark, and ML to turn data into actionable insights. My background spans software engineering and academic research.
-      </p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>University of Maryland, College Park</strong><br />
-          M.P.S. in Data Science & Analytics<br />
-          Aug 2024 – May 2026
-        </li>
-        <li>
-          <strong>SRKR Engineering College, Andhra University</strong><br />
-          B.Tech in Computer Science & Engineering<br />
-          Aug 2019 – May 2023
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>Associate Software Engineer – PalTech Company Pvt Ltd</strong><br />
-          Apr 2023 – Apr 2024<br />
-          - Built an AI-based forecasting system for predicting user activity trends using Python, Scikit-learn, and Flask.<br />
-          - Developed an NLP-powered information retrieval system using Word2Vec and spaCy.<br />
-          - Managed Oracle database operations and ETL pipelines using PL/SQL.
-        </li>
-        <li>
-          <strong>Graduate Teaching Assistant – University of Maryland</strong><br />
-          May 2025 – Present<br />
-          - Assisting in instruction, grading, and support for data science and AI courses.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>
-          <a href="https://github.com/SivaRajes/Analysis-Of-S-P-500-Companies" target="_blank" rel="noopener noreferrer">
-            Analysis of S&P 500 Companies
-          </a>
-        </h3>
-        <p>Financial analysis using Python to evaluate company performance and sector trends.</p>
+    <div class="project" data-aos="zoom-in">
+      <img src="assets/vehicle_trends.png" alt="Vehicle Trends" />
+      <div>
+        <h3><a href="https://github.com/ksurya14/Vehicle-Sales-and-Market-Trends" target="_blank">Vehicle Sales and Market Trends</a></h3>
+        <p>Regression models for pricing predictions with high accuracy.</p>
       </div>
-      <div class="project">
-        <h3>
-          <a href="https://github.com/ksurya14/Vehicle-Sales-and-Market-Trends" target="_blank" rel="noopener noreferrer">
-            Vehicle Sales and Market Trends
-          </a>
-        </h3>
-        <p>Built regression models for price prediction and trend analysis in the auto market.</p>
-      </div>
-      <div class="project">
-        <h3>
-          <a href="https://github.com/SivaRajes/LLM_Chatbot" target="_blank" rel="noopener noreferrer">
-            LLM Chatbot
-          </a>
-        </h3>
-        <p>Developed a chatbot using large language models and LangChain for domain-specific Q&A.</p>
-      </div>
-      <div class="project">
-        <h3>
-          <a href="https://github.com/SivaRajes/RealTimeBitcoinProcessingUsingPyspark" target="_blank" rel="noopener noreferrer">
-            Real-time Bitcoin Data Processing with PySpark
-          </a>
-        </h3>
-        <p>Created a real-time streaming pipeline for Bitcoin data using Spark Streaming and MLlib.</p>
-      </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>Data Structures and Algorithms in Python – DataCamp (Apr 2025)</li>
-        <li>Intermediate Python – DataCamp (Mar 2025)</li>
-        <li>Introduction to Python – DataCamp (Mar 2025)</li>
-        <li>Bayesian Data Analysis in Python – DataCamp</li>
-      </ul>
-    </section>
+    <div class="project" data-aos="zoom-in">
+      <img src="assets/chatbot.png" alt="LLM Chatbot" />
+      <div>
+        <h3><a href="https://github.com/SivaRajes/LLM_Chatbot" target="_blank">LLM Chatbot</a></h3>
+        <p>Chatbot built using LangChain and OpenAI models for Q&A.</p>
+      </div>
+    </div>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: vvsrmail@umd.edu</p>
-      <p>Location: Hyattsville, MD, USA</p>
-    </section>
-  </div>
+    <div class="project" data-aos="zoom-in">
+      <img src="assets/bitcoin_stream.png" alt="Bitcoin Stream" />
+      <div>
+        <h3><a href="https://github.com/SivaRajes/RealTimeBitcoinProcessingUsingPyspark" target="_blank">Real-time Bitcoin Data with PySpark</a></h3>
+        <p>Real-time streaming pipeline using Spark + GBT forecasting, deployed with S3.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:vvsrmail@umd.edu">vvsrmail@umd.edu</a></p>
+    <p><strong>Phone:</strong> +1 (240)-424-1042</p>
+    <p><strong>Location:</strong> Hyattsville, MD, USA</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Venkata Siva Rajesh. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
