@@ -436,6 +436,21 @@
             line-height: 1;         /* Tighter line height */
         }
 
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 0.8fr;  /* Make right column narrower */
+            gap: 2.5rem;
+            align-items: start;  /* Change center to start so it aligns top */
+        }
+        
+        .about-content p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 2.2;       /* Increase line height = taller */
+            margin-bottom: 1.8rem;
+            max-width: 420px;       /* Narrower max width */
+        }
+        
         .about-content h3 {
             font-size: 0.95rem;
             margin-bottom: 1.2rem;
@@ -443,16 +458,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-        }
-
-        .about-content p {
-            color: var(--white);
-            font-size: 0.95rem;
-            line-height: 1.9;
-            margin-bottom: 1.8rem;
-
-            max-width: 100%;
-            margin-bottom: 1rem;
         }
 
         .contact-info {
@@ -1358,7 +1363,7 @@
     <div class="nav-container">
 
         <!-- LEFT -->
-        <div class="logo">Portfolio</div>
+        
 
         <!-- CENTER -->
         <ul class="nav-links">
@@ -1368,7 +1373,13 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#" class="btn-resume">Resume</a></li>
+        <li>
+            <a href="assets/resume.pdf" 
+               class="btn-resume" 
+               download="Venkata_Siva_Rajesh_Vithanala_Resume.pdf">
+                Resume
+            </a>
+        </li>
         </ul>
 
     </div>
@@ -1474,7 +1485,10 @@ My experience spans ML engineering, distributed data processing, and LLM integra
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary" style="margin-top: 2.5rem; display: inline-block;">
+                    <a href="assets/resume.pdf" 
+                       class="btn btn-primary" 
+                       style="margin-top: 2.5rem; display: inline-block;"
+                       download="Venkata_Siva_Rajesh_Vithanala_Resume.pdf">
                         <i class="fa-solid fa-download"></i> Download Resume
                     </a>
                 </div>
