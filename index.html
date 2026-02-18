@@ -339,14 +339,14 @@
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1.3fr;
-            gap: 1.2rem;
+            gap: 5rem;
             align-items: center;
         }
 
         .profile-card {
             background: var(--bg-card);
-            border-radius: 16px;
-            padding: 1.2rem;
+            border-radius: 30px;
+            padding: 2.5rem;
             box-shadow: 0 20px 60px rgba(168, 85, 247, 0.2);
             border: 3px solid var(--border-color);
         }
@@ -355,7 +355,7 @@
             width: 100%;
             aspect-ratio: 1;
 
-            border-radius: 14px;
+            border-radius: 25px;
             overflow: hidden;          /* Important → crops photo */
 
             background: linear-gradient(
@@ -418,7 +418,7 @@
         }
 
         .stat-number {
-            font-size: 1.6rem;
+            font-size: 2.2rem;
             font-weight: 800;       /* Bolder */
             margin-bottom: 0.1rem;  /* Less space below number */
             line-height: 1;         /* Tighter line height */
@@ -430,29 +430,24 @@
         .stat-card:nth-child(4) .stat-number { color: var(--primary-pink); }
 
         .stat-label {
-            font-size: 0.7rem;
+            font-size: 1rem;
             color: var(--white);
             font-weight: 600;
             line-height: 1;         /* Tighter line height */
         }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 0.8fr;  /* Make right column narrower */
-            gap: 2.5rem;
-            align-items: start;  /* Change center to start so it aligns top */
-        }
+       
         
         .about-content p {
-            color: var(--text-gray);
-            font-size: 0.95rem;
-            line-height: 2.2;       /* Increase line height = taller */
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1.9;       /* Increase line height = taller */
             margin-bottom: 1.8rem;
-            max-width: 420px;       /* Narrower max width */
+            max-width: 650px;       /* Narrower max width */
         }
         
         .about-content h3 {
-            font-size: 0.95rem;
+            font-size: 2.5rem;
             margin-bottom: 1.2rem;
             background: linear-gradient(135deg, var(--primary-purple), var(--primary-pink));
             -webkit-background-clip: text;
@@ -573,7 +568,7 @@
         }
 
         .card-front h3 {
-        font-size: 0.95rem;
+        font-size: 1.5em;
         margin-bottom: 8px;
         color: #ffffff;
         }
@@ -592,8 +587,8 @@
 
         .card-back h4 {
         margin-bottom: 10px;
-        color: #a855f7;
-        font-size: 0.8rem;
+        color: #a855;
+        font-size: 1.3rem;
         }
 
         .card-back ul {
@@ -603,7 +598,7 @@
         .card-back li {
         font-size: 1.2rem;
         margin-bottom: 6px;
-        color: #e5e7eb;
+        color: --white;
         }
 
         /* Flip on hover */
@@ -1101,9 +1096,9 @@
         }
 
         .contact-item-white a {
-            color: var(--text-light) !important;
+            color: var(--white) !important;
             text-decoration: none !important;
-            font-size: 0.8rem;  /* Increase from default */
+            font-size: 1.3rem;  /* Increase from default */
             font-weight: 600;
         }
 
@@ -1115,7 +1110,7 @@
         /* Also update the label size */
         .contact-item-white > div > div {
             font-size: 0.95rem !important;
-            color: var(--text-gray);
+            color: var(--white);
             font-weight: 600;
             margin-bottom: 0.3rem;
         }
@@ -1169,7 +1164,7 @@
             display: block;
             margin-bottom: 0.7rem;
             font-weight: 700;
-            font-size: 0.8rem;
+            font-size: 1.3rem;
             color: var(--text-light);
         }
 
@@ -1374,11 +1369,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-            <a href="assets/resume.pdf" 
-               class="btn-resume" 
-               download="Venkata_Siva_Rajesh_Vithanala_Resume.pdf">
-                Resume
-            </a>
+            
         </li>
         </ul>
 
@@ -1481,18 +1472,10 @@ My experience spans ML engineering, distributed data processing, and LLM integra
                             <div class="contact-icon">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <div class="contact-text">
-                                <div class="contact-label">Location</div>
-                                <div class="contact-value">Hyattsville, MD</div>
-                            </div>
+                            
                         </div>
                     </div>
-                    <a href="assets/resume.pdf" 
-                       class="btn btn-primary" 
-                       style="margin-top: 2.5rem; display: inline-block;"
-                       download="Venkata_Siva_Rajesh_Vithanala_Resume.pdf">
-                        <i class="fa-solid fa-download"></i> Download Resume
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -2134,7 +2117,7 @@ My experience spans ML engineering, distributed data processing, and LLM integra
         <!-- RIGHT → FORM -->
         <div class="contact-form">
 
-            <form action="https://formspree.io/f/YOUR_ID" method="POST">
+            <form action="https://formspree.io/f/xjgewpno" method="POST">
 
             <div class="form-row">
 
