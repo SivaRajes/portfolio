@@ -91,7 +91,7 @@
 
         .nav-links {
             display: flex;
-            gap: 1.2rem;
+            gap: 1.9rem;
             list-style: none;
             align-items: center;
             margin: 0 auto;
@@ -100,8 +100,8 @@
         .nav-links a {
             color: var(--text-white);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 500;
+            font-size: 1.7rem;
             transition: all 0.3s;
             position: relative;
         }
@@ -162,7 +162,7 @@
         }
 
         .hero h1 {
-            font-size: clamp(3.5rem, 9vw, 7rem);
+            font-size: clamp(3.1rem, 7vw, 5rem);
             font-weight: 700;
             margin-bottom: 1.5rem;
             line-height: 1.1;
@@ -418,7 +418,7 @@
         }
 
         .stat-number {
-            font-size: 2.2rem;
+            font-size: 1.9rem;
             font-weight: 800;       /* Bolder */
             margin-bottom: 0.1rem;  /* Less space below number */
             line-height: 1;         /* Tighter line height */
@@ -724,8 +724,8 @@
 
         /* Logo container */
         .experience-logo {
-            width: 45px;
-            height: 45px;
+            width: 65px;
+            height: 65px;
             background: white;
             border-radius: 16px;
             display: flex;
@@ -804,7 +804,7 @@
         }
 
         .experience-title {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 0.7rem;
             color: var(--text-light);
@@ -812,16 +812,16 @@
 
         .experience-company {
             color: var(--primary-purple);
-            font-weight: 55000;
-            font-size: 0.95rem;
+            font-weight: 600;
+            font-size: 1.5rem;
             margin-bottom: 0.8rem;
         }
 
         .experience-meta {
             display: flex;
             gap: 1.2rem;
-            color: var(--text-gray);
-            font-size: 1.2rem;
+            color: var(--white);
+            font-size: 1.3rem;
             margin-bottom: 1rem;
             font-weight: 500;
         }
@@ -832,7 +832,7 @@
             margin-top: 1rem;
             padding-left: 1.2rem;
 
-            font-size: 0.8rem;     /* 🔼 Increase text size */
+            font-size: 1.0rem;     /* 🔼 Increase text size */
             line-height: 1.8;       /* 🔼 Better readability */
             color: var(--text-light);
         }
@@ -962,8 +962,8 @@
             border-radius: 18px;
             font-size: 1.0rem;
             font-weight: 700;
-            color: var(--primary-purple);
-            border: 2px solid var(--border-color);
+            color: var(--white);
+            border: 2px solid var(--primary-purple);
         }
 
         .project-card {
@@ -992,6 +992,11 @@
 
         .project-content a:hover {
             color: var(--primary-purple) !important;
+        }
+        .project-tag:hover {
+            transform: translateY(-12px) rotate(-1deg);
+            box-shadow: 0 25px 60px rgba(168, 85, 247, 0.4);
+            border-color: var(--text-light);
         }
 
         /* Or if you have a specific class for the source code link */
@@ -1207,7 +1212,7 @@
             border: none;
             border-radius: 15px;
             font-weight: 800;
-            font-size: 0.8rem;
+            font-size: 1.0rem;
             cursor: pointer;
             transition: all 0.3s;
             font-family: 'Inter', sans-serif;
@@ -1385,12 +1390,7 @@
             <span class="title typedText"></span>
         </h1>
 
-        <p class="hero-description">
-           I transform data challenges into production ML solutions. Pursuing 
-           my Master's in Data Science at the University of Maryland, College 
-           Park, specializing in LLM's, RLHF. At PalTech, I engineered ETL pipelines processing 
-           ,fine-tuned LLMs , and deployed real-time PySpark analytics on Kubernetes—all focused o
-           n delivering AI that solves real problems at scale.
+      
 
         <!-- Social Icons -->
         <div class="social-links">
@@ -1465,21 +1465,74 @@
 My experience spans ML engineering, distributed data processing, and LLM integration—focusing on turning complex data into scalable AI products and decision-ready insights.
 
                     </p>
-                    <div class="contact-info">
-
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            
-                        </div>
-                    </div>
+                    
                     
                 </div>
             </div>
         </div>
     </section>
+
+    
+
+    <section id="education">
+<div class="section-container">
+
+    <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">
+            Academic background and specialization in Data Science
+        </p>
+    </div>
+
+    <div class="experience-list">
+
+        <!-- UMD -->
+        <div class="experience-item reveal">
+
+            <div class="experience-header">
+
+                <div class="experience-logo">
+                    <img src="assets/umd.png">
+                </div>
+
+                <div class="experience-info">
+                    <h3 class="experience-title">
+                        Master of Science in Data Science
+                    </h3>
+
+                    <p class="experience-company">
+                        University of Maryland, College Park
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="experience-meta">
+                <span>📅 Aug 2024 - May 2026</span>
+                <span>📍 Maryland, United States</span>
+            </div>
+
+            <ul class="experience-description">
+                <li>GPA: 3.96 / 4.0</li>
+                <li>Focus: Machine Learning, Big Data Systems, AI Applications</li>
+                <li>Coursework: Machine Learning, Deep Learning, Big Data Analytics, NLP</li>
+            </ul>
+
+        
+
+    </div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
 
 
     <section id="capabilities">
